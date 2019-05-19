@@ -1,12 +1,6 @@
-const promise = () => {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve(123)
-    }, 3000)
-  })
-}
+import React from 'react'
+import ReactDom from 'react-dom'
 
-(async () => {
-  let data = await promise()
-  console.log(data)
-})()
+import './assets/styles/index.scss'
+
+ReactDom.render(<h1>hello react</h1>, document.getElementById('app'))
